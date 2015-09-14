@@ -1598,7 +1598,11 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+	margin-top: 0;
+	margin-right: 16px;
+	margin-left: -8px;
+	margin-bottom: 2em;
+	font-size: 20px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2414,11 +2418,11 @@
 			border-radius: 100%;
 			cursor: default;
 			display: inline-block;
-			height: 6em;
+			height: 12em;
 			line-height: 6em;
 			margin: 0 0 2em 0;
 			text-align: center;
-			width: 6em;
+			width: 12em;
 		}
 
 			.icon.major:before {
@@ -2562,6 +2566,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			text-align:center;
 		}
 
 			ul.actions li {
@@ -2995,6 +3000,7 @@
 		.spotlight.top .content {
 			border-bottom-width: 0.35em;
 			top: 0;
+			padding:1.8em;
 		}
 
 		.spotlight.bottom .content {
@@ -3255,10 +3261,10 @@
 	}
 
 	#header {
-		background: rgba(39, 40, 51, 0.965);
+		background: rgba(39, 40, 51);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
-		height: 3.5em;
+		height: 2em;
 		left: 0;
 		line-height: 3.5em;
 		position: fixed;
@@ -3336,7 +3342,7 @@
 		background-image: url("../../images/banner.jpg");
 		background-position: center center;
 		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 1);
 		min-height: 100vh;
 		position: relative;
 		text-align: center;
@@ -3352,10 +3358,11 @@
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.25)), url("images/overlay.png");;
 			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+		
 			content: '';
 			display: block;
 			height: 100%;
@@ -3492,7 +3499,8 @@
 			}
 
 			.spotlight.bottom .content {
-				padding: 3.825em 0 2.95em 0;
+	padding: 3.825em 0 2.95em 0;
+	size: auto;
 			}
 
 			.spotlight.left .content, .spotlight.right .content {
@@ -3699,7 +3707,7 @@
 		/* Banner */
 
 			#banner {
-				box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
+				box-shadow: 0 0.125em 0.2em 0 rgba(0, 0, 0, 0.25);
 				min-height: calc(100vh - 44px);
 			}
 
@@ -3999,3 +4007,5 @@
 					}
 
 	}
+.3u {
+}
